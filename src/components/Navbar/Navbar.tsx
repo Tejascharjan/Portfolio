@@ -47,9 +47,9 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className='text-lg font-semibold cursor-pointer'>
                          <span className='text-[#8245ec]'>&lt;</span>
-                         <span className='text-white'>Tarun</span>
+                         <span className='text-white'>Tejas</span>
                          <span className='text-[#8245ec]'>/</span>
-                         <span className='text-white'>Kaushik</span>
+                         <span className='text-white'>Charjan</span>
                          <span className='text-[#8245ec]'>&gt;</span>
                     </div>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
                     {/* Social Icons */}
                     <div className='hidden md:flex space-x-4'>
                          <a
-                              href='https://github.com/codingmastr'
+                              href='https://github.com/Tejascharjan'
                               target='_blank'
                               rel='noopener noreferrer'
                               className='text-gray-300 hover:text-[#8245ec]'
@@ -80,7 +80,7 @@ const Navbar = () => {
                               <FaGithub size={24} />
                          </a>
                          <a
-                              href='https://www.linkedin.com/in/tarun-kaushik-553b441a4'
+                              href='https://www.linkedin.com/in/tejas-charjan/'
                               target='_blank'
                               rel='noopener noreferrer'
                               className='text-gray-300 hover:text-[#8245ec]'
@@ -123,7 +123,7 @@ const Navbar = () => {
                               ))}
                               <div className='flex space-x-4'>
                                    <a
-                                        href='https://github.com/codingmastr'
+                                        href='https://github.com/Tejascharjan'
                                         target='_blank'
                                         rel='noopener noreferrer'
                                         className='text-gray-300 hover:text-white'
@@ -131,7 +131,7 @@ const Navbar = () => {
                                         <FaGithub size={24} />
                                    </a>
                                    <a
-                                        href='https://www.linkedin.com/in/tarun-kaushik-553b441a4'
+                                        href='https://www.linkedin.com/in/tejas-charjan/'
                                         target='_blank'
                                         rel='noopener noreferrer'
                                         className='text-gray-300 hover:text-white'

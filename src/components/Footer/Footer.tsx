@@ -34,10 +34,19 @@ const Footer = () => {
                     {/* social media icons */}
                     <div className='flex flex-wrap justify-center space-x-4 mt-6'>
                          {[
-                              { icon: <FaFacebook />, link: "" },
-                              { icon: <FaLinkedin />, link: "" },
-                              { icon: <FaGithub />, link: "" },
-                              { icon: <FaInstagram />, link: "" },
+                              {
+                                   icon: <FaFacebook />,
+                                   link: "https://www.facebook.com/tejascharjand",
+                              },
+                              {
+                                   icon: <FaLinkedin />,
+                                   link: "https://www.linkedin.com/in/tejas-charjan/",
+                              },
+                              { icon: <FaGithub />, link: "https://github.com/Tejascharjan" },
+                              {
+                                   icon: <FaInstagram />,
+                                   link: "https://www.instagram.com/tejas_charjan",
+                              },
                          ].map((item, index) => (
                               <a
                                    key={index}

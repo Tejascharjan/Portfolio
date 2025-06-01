@@ -27,7 +27,7 @@ const Work = () => {
                     </p>
                </div>
                {/* project grid */}
-               <div className='grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+               <div className='grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
                     {projects.map((project) => (
                          <div
                               key={project.id}
@@ -65,32 +65,39 @@ const Work = () => {
 
                {/* modal container */}
                {selectedProject && (
-                    <div className='fixed inset-0 z-50 flex items-center justify-center bg-black opacity-90 p-4'>
-                         <div className='bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative'>
+                    <div className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4'>
+                         <div className='bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl max-h-screen overflow-hidden'>
                               <div className='flex justify-end p-4'>
                                    <button
                                         onClick={handleCloseModal}
-                                        className='text-white text-3xl font-bold hover:text-purple-500'
+                                        className='text-white text-3xl font-bold hover:text-purple-500 leading-none'
                                    >
                                         &times;
                                    </button>
                               </div>
-                              <div className='flex flex-col'>
+
+                              {/* Scrollable content area */}
+                              <div className='flex flex-col overflow-y-auto max-h-[calc(100vh-4rem)]'>
                                    <div className='w-full flex justify-center bg-gray-900 px-4'>
                                         <img
                                              src={selectedProject.image}
                                              alt={selectedProject.title}
-                                             className='lg:w-full w-[95%] object-contain rounded-xl shadow-2xl'
+                                             className='max-h-[400px] w-auto object-contain rounded-xl shadow-2xl'
                                         />
                                    </div>
-                                   <div className='lg:p-8 p-6'>
-                                        <h3 className='lg:text-3xl text-md font-bold text-white mb-4'>
+
+                                   {/* Text/content section */}
+                                   <div className='lg:p-8 p-6 space-y-6'>
+                                        <h3 className='lg:text-3xl text-md font-bold text-white'>
                                              {selectedProject.title}
                                         </h3>
-                                        <p className='text-gray-400 mb-6 lg:text-base text-xs'>
+
+                                        <p className='text-gray-400 lg:text-base text-xs whitespace-pre-wrap'>
                                              {selectedProject.description}
                                         </p>
-                                        <div className='flex flex-wrap gap-2 mb-6'>
+
+                                        {/* Tags */}
+                                        <div className='flex flex-wrap gap-2'>
                                              {selectedProject.tags.map((tag, index) => (
                                                   <span
                                                        key={index}
@@ -100,6 +107,8 @@ const Work = () => {
                                                   </span>
                                              ))}
                                         </div>
+
+                                        {/* Action buttons */}
                                         <div className='flex gap-4'>
                                              <a
                                                   href={selectedProject.github}

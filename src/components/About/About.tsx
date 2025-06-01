@@ -1,6 +1,7 @@
 import { Typewriter } from "react-simple-typewriter";
 import Tilt from "react-parallax-tilt";
 import profileimage from "../../assets/profile.png";
+import resume from "../../assets/work_logo/Tejas_Charjan_Resume.pdf";
 
 const About = () => {
      return (
@@ -41,7 +42,7 @@ const About = () => {
                          </p>
                          {/* resume link */}
                          <a
-                              href=''
+                              href={resume}
                               target='_blank'
                               rel='noopener noreferrer'
                               className='inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105'
