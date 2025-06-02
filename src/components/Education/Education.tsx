@@ -11,8 +11,8 @@ const Education = () => {
                     <h2 className='text-4xl font-bold text-white uppercase'>Education</h2>
                     <div className='w-32 h-1 bg-purple-500 mx-auto mt-4'></div>
                     <p className='text-gray-400 mt-4 text-lg font-semibold'>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-                         dolores.
+                         My education has been a journey of learning and development. Here are the
+                         details of my academic background.
                     </p>
                </div>
 

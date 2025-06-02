@@ -28,6 +28,7 @@ import mspllogo from "./assets/work_logo/mspl.png";
 import prpcemlogo from "./assets/education_logo/prp_logo.png";
 import dcpelogo from "./assets/education_logo/dcpelogo.png";
 import lbhs from "./assets/education_logo/lbhs.png";
+import ssclogo from "./assets/education_logo/ssclogo.png";
 
 // Project Section Logo's
 import multi_ecomfront from "./assets/work_logo/multiecom_frontend.png";
@@ -130,7 +131,7 @@ export const education = [
      },
      {
           id: 3,
-          img: lbhs,
+          img: ssclogo,
           school: "Madan Maharaj Vidhyalaya, Ful Amala",
           date: "June 2016 - March 2017",
           grade: "80.00%",
