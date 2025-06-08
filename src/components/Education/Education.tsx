@@ -4,7 +4,7 @@ const Education = () => {
      return (
           <section
                id='education'
-               className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans skills-gradient clip-path-custom-3'
+               className='py-24 pb-24 px-[12vw] md:px-[7vw] xl:px-[16vw] font-sans skills-gradient clip-path-custom-3'
           >
                {/* section title */}
                <div className='text-center mb-16'>
@@ -39,7 +39,7 @@ const Education = () => {
 
                               {/* content section */}
                               <div
-                                   className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
+                                   className={`w-full sm:max-w-sm xl:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
                                         index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
                                    } sm:ml-8 sm:mr-8 ml-8 transform transition-transform duration-300 hover:scale-105`}
                               >

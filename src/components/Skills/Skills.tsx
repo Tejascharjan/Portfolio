@@ -4,7 +4,7 @@ const Skills = () => {
      return (
           <section
                id='skills'
-               className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[18vw] font-sans skills-gradient clip-path-custom'
+               className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[10vw] xl:px-[18vw] font-sans skills-gradient clip-path-custom'
           >
                {/* section title */}
                <div className='text-center mb-8'>
@@ -35,7 +35,7 @@ const Skills = () => {
                                    transitionSpeed={1000}
                                    gyroscope={true}
                               >
-                                   <div className='grid grid-cols-2 sm:grid-cols-3 gap-3 w-full'>
+                                   <div className='grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-3 w-full'>
                                         {category.skills.map((skill) => (
                                              <div
                                                   key={skill.name}
