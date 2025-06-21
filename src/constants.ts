@@ -187,7 +187,7 @@ export const projects = [
           description:
                "Developed a farmers' online shop as a college project using JSP, enabling farmers to list and sell their products directly to customers.The platform includes features like product browsing, ordering, and basic user management.",
           image: prpcemlogo,
-          tags: ["React JS", "Node.js", "NPM", "Validation"],
+          tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Jsp", "MySql"],
           github: "https://github.com/Tejascharjan/Farmers_online_shop",
           webapp: "#",
      },
